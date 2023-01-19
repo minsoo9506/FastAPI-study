@@ -25,6 +25,6 @@
     - reponse parameter
     - setting the status code dynamically
 3. Raising HTTP errors
-4 Building a custom response
+4. Building a custom response
     - using the `response_class` parameter
     - custom reponse
