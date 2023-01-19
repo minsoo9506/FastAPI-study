@@ -15,7 +15,7 @@
 
 # chaper 03
 
-## Handling request parameters
+## 1. Handling request parameters
 
 ### endpoint
 - 간단하게 구현 가능 [`.py`](./chap03/01_first_endpoint.py)
@@ -62,3 +62,30 @@
 
 ### request object
 - request object에 접근해야 할 때도 있다. `Request` 클래스를 이용한다. [`.py`](./chap03/12_request_obj.py)
+
+## 2. Customizing the response
+
+### path operation parameters
+- HTTP reponse에서 커스터마이징 할 수 있는 것중 하나가 `status_code` parameter
+    - POST 예시 [`.py`](./chap03/13_response_path_parameters_POST.py)
+    - delete 예시 [`.py`](./chap03/14_response_path_parameters_delete.py)
+- `response_model` parameter를 통해서 제약을 줄 수도 있다. [`.py`](./chap03/15_reponse_parameters_reponse_model.py)
+
+### reponse parameter
+- setting header [`.py`]
+    - key, value 형태로 커스텀
+- setting cookies [`.py`]
+
+### setting the status code dynamically
+- status code를 dynamic하게 할 수 있다. [`.py`](./chap03/18_response_parameter_status_code.py)
+
+## 3. Raising HTTP errors
+- FastAPI에서 `HTTPException`를 통해 error를 custom raise 할 수 있다. [`.py`](./chap03/19_raise_error.py)
+
+## 4. Building a custom response
+
+### using the `response_class` parameter
+- `Response`의 subclass들을 사용 [`.py`](./chap03/20_custom_reponse.py)
+
+### custom reponse
+- FastAPI가 제공하는 적절한 subclass가 없으면 직접 커스텀 할 수도 있다. [`.py`](/chap03/21_custom_reponse.py)
