@@ -10,6 +10,6 @@ class User(BaseModel):
 app = FastAPI()
 
 
-@app.get("/users")
+@app.post("/users")
 async def create_user(user: User):
     return user
