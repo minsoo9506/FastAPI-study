@@ -13,7 +13,9 @@
 - [Uvicorn 소개](https://chacha95.github.io/2021-01-16-python6/)
 - [uvicon, fastapi 비동기 메커니즘 이해](https://m.blog.naver.com/pjt3591oo/222772705407)
 
-## chaper 03
+# chaper 03
+
+## Handling request parameters
 
 ### endpoint
 - 간단하게 구현 가능 [`.py`](./chap03/01_first_endpoint.py)
@@ -29,9 +31,10 @@
 </details>
 
 ### path parameter
-- path parameter를 type hint를 이용하여 제약을 줄 수 있다.
+- path parameter를 type hint를 이용하여 자료형 제약을 줄 수 있다.
     - 자료형 [`.py`](./chap03/02_path_parameters_base.py)
     - `enum`과 클래스를 이용한 제약 [`.py`](./chap03/03_path_parameters_enum.py)
+- parameter 값 자체에 대한 제약을 줄 수도 있다.
     - FastAPI에서 제공하는 `Path` [`.py`](./chap03/04_path_parameters_Path.py)
 
 ### query parameter
@@ -47,3 +50,15 @@
 - request body의 값도 제약을 줄 수 있다.
     - 자료형 [`.py`](./chap03/07_request_body.py)
     - pydantic의 `BaseModel` 상속 [`.py`](/chap03/08_request_body_pydantic.py)
+
+### Form data and File upload
+- form data, file도 POST 할 수 있다. 이에 대한 제약도 가능하다.
+- FastAPI에서 `UploadFile` 클래스를 통해서 특정 값 이상의 memory를 먹으면 disk에 파일을 저장한다. [`.py`](./chap03/09_upload_file.py)
+
+### headers and cookies
+- `Header`함수를 이용해서 header를 받도록 제약 [`.py`](./chap03/10_headers.py)
+    - `http GET http://localhost:8000 'Hello: World'`, header에서는 key값을 소문자로 인식
+- `Cookie` [`.py`](./chap03/11_cookies.py)
+
+### request object
+- request object에 접근해야 할 때도 있다. `Request` 클래스를 이용한다. [`.py`](./chap03/12_request_obj.py)
