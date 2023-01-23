@@ -54,12 +54,12 @@
 - HTTP reponse에서 커스터마이징 할 수 있는 것중 하나가 `status_code` parameter
     - POST 예시 [`.py`](./13_response_path_parameters_POST.py)
     - delete 예시 [`.py`](./14_response_path_parameters_delete.py)
-- `response_model` parameter를 통해서 제약을 줄 수도 있다. [`.py`](./chap03/15_reponse_parameters_reponse_model.py)
+- `response_model` parameter를 통해서 제약을 줄 수도 있다. [`.py`](./15_reponse_parameters_reponse_model.py)
 
 ### reponse parameter
-- setting header [`.py`]
+- setting header [`.py`](./16_response_parameter_header.py)
     - key, value 형태로 커스텀
-- setting cookies [`.py`]
+- setting cookies [`.py`](./17_response_parameter_cookie.py)
 
 ### setting the status code dynamically
 - status code를 dynamic하게 할 수 있다. [`.py`](./18_response_parameter_status_code.py)
