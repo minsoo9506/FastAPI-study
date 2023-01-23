@@ -11,7 +11,7 @@
 - [Uvicorn 소개](https://chacha95.github.io/2021-01-16-python6/)
 - [uvicon, fastapi 비동기 메커니즘 이해](https://m.blog.naver.com/pjt3591oo/222772705407)
 
-# [Chapter 03](./chap03/)
+# [Chapter 03](./chap03/) Developing a RESTful API with FASTAPI
 1. Handling request parameters
     - endpoint
     - path parameter
@@ -28,3 +28,14 @@
 4. Building a custom response
     - using the `response_class` parameter
     - custom reponse
+
+# [Chapter 04](./chap04/) Managing Pydantic Data Models in FastAPI
+1. Defining models and their field types with Pydantic
+    - standard field types
+    - optional fields and default values
+    - field validation
+    - dynamic default values
+    - validating email addresses and URLs with pydantic type
+2. Creating model variations with class inheritance
+3. Adding custom data validation with Pydantic
+4. Working with Pydantic objects
