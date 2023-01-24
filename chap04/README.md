@@ -22,3 +22,4 @@
 - email과 http url도 validation할 수 있다. [`.py`](./05_email_url_validation.py)
 
 ## 2. Creating model variations with class inheritance
+- 중복되는 내용을 클래스 상속을 통해 해소한다. [`.py`](./06_model_inheritance.py)
