@@ -23,3 +23,15 @@
 
 ## 2. Creating model variations with class inheritance
 - 중복되는 내용을 클래스 상속을 통해 해소한다. [`.py`](./06_model_inheritance.py)
+
+## 3. Adding custom data validation with Pydantic
+
+### applying validation at a field level
+- 데코레이터 `@validator`를 통해서 field level에서 원하는 로직을 구현할 수도 있다. [`.py`](./07_custom_validation_field.py)
+
+### applying validation at an object level
+- 데코레이터 `@root_validator`를 통해서 object level에서 원하는 로직을 구현할 수도 있다. [`.py`](./08_custom_validation_object.py)
+
+### applying validation before pydantic parsing
+- validator들은 default로 parsing을 한 뒤에 적용된다. 즉, invalid한 type이 들어오면 validator에 적용되기 전에 error가 난다.
+- 하지만 때로는 validator를 먼저 적용한 뒤에 판단하고 싶을 수 있다. `pre` parameter를 이용한다. [`.py`](./09_custom_validation_before_parsing.py)
