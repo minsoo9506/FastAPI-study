@@ -35,3 +35,13 @@
 ### applying validation before pydantic parsing
 - validator들은 default로 parsing을 한 뒤에 적용된다. 즉, invalid한 type이 들어오면 validator에 적용되기 전에 error가 난다.
 - 하지만 때로는 validator를 먼저 적용한 뒤에 판단하고 싶을 수 있다. `pre` parameter를 이용한다. [`.py`](./09_custom_validation_before_parsing.py)
+
+## 4. Working with Pydantic objects
+
+### converting an object into a dictionary
+- `obj.dict()`를 통해서 dictionary로 만들 수 있다. [`.py`](./10_converting_object_to_dict.py)
+
+### updating an instance with a partial one
+- 특정 field만 업데이트하는 과정 [`.py`](./11_update_partial.py)
+    - `updated_fields = pydantic_obj.dict(exclude_unset=True)`에서 처럼 `exclude_unset`으로 값을 받은 field만 dict로 보낸다.
+    - 그리고 `updated_dict_obj = dict_obj.copy(update=updated_fields)`으로 해당하는 부분만 업데이트해서 dict 복사한다.
