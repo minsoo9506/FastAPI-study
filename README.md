@@ -38,4 +38,23 @@
     - validating email addresses and URLs with pydantic type
 2. Creating model variations with class inheritance
 3. Adding custom data validation with Pydantic
+    - applying validation at a field level
+    - applying validation at an object level
+    - applying validation before pydantic parsing
 4. Working with Pydantic objects
+    - converting an object into a dictionary
+    - updating an instance with a partial one
+
+# [Chapter 05](./chap05/) Dependency Injections in FastAPI
+1. What is dependency injection?
+2. Creating and using a function dependency
+    - get an object or raise a 404 error
+3. Creating and using a parameterized dependency with a class
+    - use class methods as dependencies
+4. Using dependencies at a path, router, and global level
+
+# [Chapter 06](./chap06/) Databases and Asynchronous ORMs
+1. An overview of relational and NoSQL databases
+2. Communicating with a SQL database with SQLAlchemy
+3. Communicating with a SQL database with Tortoise ORM
+4. Communicating with a MongoDB database using Motor
