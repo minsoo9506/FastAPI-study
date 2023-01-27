@@ -58,3 +58,9 @@
 2. Communicating with a SQL database with SQLAlchemy
 3. Communicating with a SQL database with Tortoise ORM
 4. Communicating with a MongoDB database using Motor
+
+# [Chapter 07](./chap07/) Managing Authentication and Security in FastAPI
+1. Security dependencies in FastAPI
+2. Storing a user and their password securely in a database
+3. Retrieving a user and gernerating an access token, Securing endpoints with access tokens
+4. Configuring CORS and protecting against CSRF attacks
