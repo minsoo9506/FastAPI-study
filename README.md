@@ -64,3 +64,8 @@
 2. Storing a user and their password securely in a database
 3. Retrieving a user and gernerating an access token, Securing endpoints with access tokens
 4. Configuring CORS and protecting against CSRF attacks
+
+# [Chapter 08](./chap08/) Defining WebSockets for Two-Way Interactive Communication in FastAPI
+1. Understanding the principles of two-way communication with WebSockets
+2. Creating a WebSocket with FastAPI
+3. Handing multiple WebSocket connections and broadcasting messages
