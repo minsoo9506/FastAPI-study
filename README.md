@@ -69,3 +69,9 @@
 1. Understanding the principles of two-way communication with WebSockets
 2. Creating a WebSocket with FastAPI
 3. Handing multiple WebSocket connections and broadcasting messages
+
+# [Chapter 09](./chap09/) Testing an API Asynchronously with pytest and HTTPX
+1. Introduction to unit testing with pytest
+2. Setting up the testing tools for FastAPI with HTTPX
+3. Writing tests for REST API endpoints
+4. Writing tests for WebSocket endpoints
