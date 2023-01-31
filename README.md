@@ -4,9 +4,6 @@
 - Uvicorn
     - libuv를 기반으로 하여 cython으로 구현된 `uvloop`와 http parser `httptools`를 사용하는 ASGI web server
 
-### python 비동기
-- 주피터노트북으로 공부 후 정리
-
 ### reference
 - [Uvicorn 소개](https://chacha95.github.io/2021-01-16-python6/)
 - [uvicon, fastapi 비동기 메커니즘 이해](https://m.blog.naver.com/pjt3591oo/222772705407)
@@ -75,3 +72,5 @@
 2. Setting up the testing tools for FastAPI with HTTPX
 3. Writing tests for REST API endpoints
 4. Writing tests for WebSocket endpoints
+
+# [Chapter 10](./chap10/) Deploying a FastAPI Project
