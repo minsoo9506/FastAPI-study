@@ -74,3 +74,16 @@
 4. Writing tests for WebSocket endpoints
 
 # [Chapter 10](./chap10/) Deploying a FastAPI Project
+1. Setting and using environment variables
+2. Managing python dependencies
+3. Deploying a FastAPI application on a serverless platform
+4. Deploying a FastAPI application with Docker
+5. Deploying a FastAPI application on a traditional server
+
+# [Chapter 13](./chap13/) Creating an Efficient Prediction API Endpoint with FastAPI
+1. Persisting a trained model with Joblib
+    - dumping a trained model
+    - loading a trained model
+ 2. Implementing an efficient prediction endpoint(
+    - app 시작시에 model을 load하고 depends를 이용하여 예측값을 보낸다. [`.py`](./03_prediction_endpoint.py)
+ 3. Caching results with Joblib

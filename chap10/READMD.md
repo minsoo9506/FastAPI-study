@@ -18,7 +18,7 @@ class Settings(BaseSettings):
 
 ```
 
-## 2. Managin python dependencies
+## 2. Managing python dependencies
 - requirements.txt를 직접 관리한다. `pip freaze`하면 모든 패키지가 다되서 불필요하다.
 
 ## 3. Deploying a FastAPI application on a serverless platform
