@@ -84,6 +84,5 @@
 1. Persisting a trained model with Joblib
     - dumping a trained model
     - loading a trained model
- 2. Implementing an efficient prediction endpoint(
-    - app 시작시에 model을 load하고 depends를 이용하여 예측값을 보낸다. [`.py`](./03_prediction_endpoint.py)
- 3. Caching results with Joblib
+2. Implementing an efficient prediction endpoint(
+3. Caching results with Joblib
